@@ -11,7 +11,7 @@ class App extends Component {
         text: "",
         id: uniqid(),
         index: this.counter,
-        editTask: false,
+        editItem: false,
       },
       tasks: [],
     };
@@ -26,7 +26,7 @@ class App extends Component {
         task: selectedTask.title,
         id: id,
         index: this.counter,
-        editTask: true,
+        editItem: true,
       },
       tasks: filteredTasks,
     });
@@ -51,7 +51,6 @@ class App extends Component {
     this.setState({
       task: {
         text: e.target.value,
-
         id: this.state.task.id,
         index: this.counter,
       },
@@ -68,7 +67,7 @@ class App extends Component {
         id: uniqid(),
         index: this.counter,
         title: this.state.task,
-        editTask: false,
+        editItem: false,
       },
     });
   };
@@ -90,8 +89,7 @@ class App extends Component {
             type="submit"
             // {editItem} - to wywala blad
           >
-            {/* Add Task */}
-            {editTask}Add Task
+            Add Task
           </button>
         </form>
         <Overview
