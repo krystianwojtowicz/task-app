@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/task-app/static/js/main.aec4beb8.js",
+    "main.js": "/task-app/static/js/main.5d08a5fa.js",
     "index.html": "/task-app/index.html",
-    "main.aec4beb8.js.map": "/task-app/static/js/main.aec4beb8.js.map"
+    "main.5d08a5fa.js.map": "/task-app/static/js/main.5d08a5fa.js.map"
   },
   "entrypoints": [
-    "static/js/main.aec4beb8.js"
+    "static/js/main.5d08a5fa.js"
   ]
 }
