@@ -51,9 +51,6 @@ class App extends Component {
     this.setState({
       task: {
         text: e.target.value,
-
-        id: this.state.task.id,
-        index: this.counter,
       },
     });
   };
@@ -86,12 +83,8 @@ class App extends Component {
             type="text"
             id="taskInput"
           />
-          <button
-            type="submit"
-            // {editItem} - to wywala blad
-          >
-            {/* Add Task */}
-            {editTask}Add Task
+          <button type="submit">
+            {task.editTask ? "Edit task" : "Add task"}
           </button>
         </form>
         <Overview
